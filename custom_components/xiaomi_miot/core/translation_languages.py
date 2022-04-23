@@ -1,5 +1,19 @@
-# https://iot.mi.com/new/doc/tools-and-resources/design/spec/description
-TRANSLATION_LANGUAGES = {
+# configuration.yaml
+xiaomi_miot:
+  language: zh # 使用内置词典，目前仅支持`zh`
+  # https://github.com/al-one/hass-xiaomi-miot/blob/master/custom_components/xiaomi_miot/core/translation_languages.py
+  translations:
+    # 全局词典，对所有实体生效
+    idle: '空闲'
+    busy: '工作中'
+    # 指定风扇模式的词典
+    fan.mode:
+      straight wind: '直吹模式'
+      natural wind: '自然风'
+    # 指定洗衣机烘干模式的词典
+    washer.drying_level:
+      moist: '微湿'
+      extra: '特干'
 
     'zh': {
         'off': '关闭',
